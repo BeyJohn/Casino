@@ -5,8 +5,83 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Roulette"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Roulette" Height="450" Width="600" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <Grid>
-        
+        <Grid Margin="25,25,329,10">
+            <RadioButton x:Name="_0" GroupName="Bets" Content="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,10,0,0" Width="80" Background="Green" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_00" GroupName="Bets" Content="00" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,10,0,0" Width="80" Background="Green" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="_1" GroupName="Bets" Content="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,30,0,0" Width="40" Background="Red" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_2" GroupName="Bets" Content="2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,30,0,0" Width="40" Background="DarkGray"  Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_3" GroupName="Bets" Content="3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,30,0,0" Width="40" Background="Red" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="_4" GroupName="Bets" Content="4" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,50,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_5" GroupName="Bets" Content="5" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,50,0,0" Width="40" Background="Red" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_6" GroupName="Bets" Content="6" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,50,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="_7" GroupName="Bets" Content="7" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,70,0,0" Width="40" Background="Red" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_8" GroupName="Bets" Content="8" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,70,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_9" GroupName="Bets" Content="9" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,70,0,0" Width="40" Background="Red" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="_10" GroupName="Bets" Content="10" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,90,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_11" GroupName="Bets" Content="11" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,90,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_12" GroupName="Bets" Content="12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,90,0,0" Width="40" Background="Red" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="_13" GroupName="Bets" Content="13" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,110,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_14" GroupName="Bets" Content="14" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,110,0,0" Width="40" Background="Red"  Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_15" GroupName="Bets" Content="15" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,110,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="_16" GroupName="Bets" Content="16" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,130,0,0" Width="40" Background="Red"  Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_17" GroupName="Bets" Content="17" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,130,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_18" GroupName="Bets" Content="18" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,130,0,0" Width="40" Background="Red" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="_19" GroupName="Bets" Content="19" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,150,0,0" Width="40" Background="Red"  Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_20" GroupName="Bets" Content="20" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,150,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_21" GroupName="Bets" Content="21" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,150,0,0" Width="40" Background="Red"  Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="_22" GroupName="Bets" Content="22" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,170,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_23" GroupName="Bets" Content="23" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,170,0,0" Width="40" Background="Red"  Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_24" GroupName="Bets" Content="24" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,170,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="_25" GroupName="Bets" Content="25" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,190,0,0" Width="40" Background="Red" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_26" GroupName="Bets" Content="26" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,190,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_27" GroupName="Bets" Content="27" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,190,0,0" Width="40" Background="Red"  Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="_28" GroupName="Bets" Content="28" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,210,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_29" GroupName="Bets" Content="29" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,210,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_30" GroupName="Bets" Content="30" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,210,0,0" Width="40" Background="Red" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="_31" GroupName="Bets" Content="31" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,230,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_32" GroupName="Bets" Content="32" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,230,0,0" Width="40" Background="Red" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_33" GroupName="Bets" Content="33" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,230,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="_34" GroupName="Bets" Content="34" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,250,0,0" Width="40" Background="Red"  Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_35" GroupName="Bets" Content="35" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,250,0,0" Width="40" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_36" GroupName="Bets" Content="36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,250,0,0" Width="40" Background="Red" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="Row1" GroupName="Bets" Content="Row 1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,270,0,0" Height="20" Width="60" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="Row2" GroupName="Bets" Content="Row 2" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,270,0,0" Height="20" Width="60" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="Row3" GroupName="Bets" Content="Row 3" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,270,0,0" Height="20" Width="60" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="First12" GroupName="Bets" Content="1st 12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,290,0,0" Height="20" Width="60" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="Second12" GroupName="Bets" Content="2nd 12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="80,290,0,0" Height="20" Width="60" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="Third12" GroupName="Bets" Content="3rd 12" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="150,290,0,0" Height="20" Width="60" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="Evens" GroupName="Bets" Content="Evens" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,315,0,0" Width="80"  Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="Odds" GroupName="Bets" Content="Odds" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,315,0,0" Width="80" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="_1to18" GroupName="Bets" Content="1-18" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,335,0,0" Width="80" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="_18to36" GroupName="Bets" Content="18-36" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="109,335,0,0" Width="80" Checked="AllCheckBoxes_CheckedChanged" />
+
+            <RadioButton x:Name="Reds" GroupName="Bets" Content="Reds" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="24,355,0,0" Width="80" Background="Red" Checked="AllCheckBoxes_CheckedChanged" />
+            <RadioButton x:Name="Blacks" GroupName="Bets" Content="Blacks" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,355,0,0" Width="80" Background="DarkGray" Checked="AllCheckBoxes_CheckedChanged" />
+        </Grid>
+        <TextBox x:Name="DisplayText" ScrollViewer.VerticalScrollBarVisibility="Visible" IsReadOnly="True" Height="150" TextWrapping="Wrap" Text="Place your bet." HorizontalAlignment="Left" VerticalAlignment="Top" Margin="270,25,0,0" Width="299" TextChanged="DisplayText_TextChanged" />
+        <TextBox x:Name="RemainingMoney" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="449,344,0,0" IsReadOnly="True" />
+        <TextBox x:Name="Bet" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="449,316,0,0" TextChanged="Bet_TextChanged" />
+        <Label Content="Bet" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="332,316,0,0" Width="112" />
+        <Label Content="Remaining Money" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="332,344,0,0" Width="112" />
+        <Button Content="Spin" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="494,382,0,0" Click="Spin" />
+
     </Grid>
 </Window>

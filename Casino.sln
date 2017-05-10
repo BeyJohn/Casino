@@ -1,9 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.26430.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Roulette", "Roulette\Roulette.csproj", "{586C2A40-84A7-474F-B427-DF08B6ECCCEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Poker", "Poker\Poker.csproj", "{DE2160D2-181A-4C75-84FB-4753C1A80B9D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Craps", "Craps\Craps.csproj", "{7C5C2A3D-8DA6-4B8E-9631-CE2AE6BD5B81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackjack", "..\..\..\Downloads\Blackjack-master\Blackjack\Blackjack.csproj", "{E5D9727E-FA05-4E07-AB2D-1E05F35CD6A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +21,18 @@ Global
 		{586C2A40-84A7-474F-B427-DF08B6ECCCEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{586C2A40-84A7-474F-B427-DF08B6ECCCEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{586C2A40-84A7-474F-B427-DF08B6ECCCEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE2160D2-181A-4C75-84FB-4753C1A80B9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE2160D2-181A-4C75-84FB-4753C1A80B9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE2160D2-181A-4C75-84FB-4753C1A80B9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE2160D2-181A-4C75-84FB-4753C1A80B9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C5C2A3D-8DA6-4B8E-9631-CE2AE6BD5B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C5C2A3D-8DA6-4B8E-9631-CE2AE6BD5B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C5C2A3D-8DA6-4B8E-9631-CE2AE6BD5B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C5C2A3D-8DA6-4B8E-9631-CE2AE6BD5B81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5D9727E-FA05-4E07-AB2D-1E05F35CD6A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5D9727E-FA05-4E07-AB2D-1E05F35CD6A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5D9727E-FA05-4E07-AB2D-1E05F35CD6A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5D9727E-FA05-4E07-AB2D-1E05F35CD6A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -116,7 +116,7 @@ namespace Roulette
 				case "1st 12":
 				case "2nd 12":
 				case "3rd 12":
-					return 4;
+					return 1;
 
 				case "Evens":
 				case "Odds":
@@ -124,10 +124,10 @@ namespace Roulette
 				case "Blacks":
 				case "1-18":
 				case "18-36":
-					return 3;
+					return 2;
 
 				default:
-					return 37;
+					return 35;
 			}
 		}
 

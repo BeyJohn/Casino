@@ -91,13 +91,15 @@ namespace Roulette
 
 				default:
 					DisplayText.Text += "\nSpun a " + r + ".";
-					if ((string)_CurrentRadioButton.Content == ("" + r) || ((string)_CurrentRadioButton.Content == "Row1" && _Row1.Contains(r)) || ((string)_CurrentRadioButton.Content == "Row2" && _Row2.Contains(r)) || ((string)_CurrentRadioButton.Content == "Row3" && _Row3.Contains(r)) || ((string)_CurrentRadioButton.Content == "Evens" && r % 2 == 0) || ((string)_CurrentRadioButton.Content == "Odds" && r % 2 == 1) || ((string)_CurrentRadioButton.Content == "Blacks" && _Blacks.Contains(r)) || ((string)_CurrentRadioButton.Content == "Reds" && _Reds.Contains(r)) || ((string)_CurrentRadioButton.Content == "1st 12" && r < 13 && r > 0) || ((string)_CurrentRadioButton.Content == "2nd 12" && r < 25 && r > 12) || ((string)_CurrentRadioButton.Content == "3rd 12" && r < 37 && r > 24) || ((string)_CurrentRadioButton.Content == "1-18" && r > 0 && r < 19) || ((string)_CurrentRadioButton.Content == "19-36" && r > 18 && r < 37))
+					if ((string)_CurrentRadioButton.Content == ("" + r) || ((string)_CurrentRadioButton.Content == "Row 1" && _Row1.Contains(r)) || ((string)_CurrentRadioButton.Content == "Row 2" && _Row2.Contains(r)) || ((string)_CurrentRadioButton.Content == "Row 3" && _Row3.Contains(r)) || ((string)_CurrentRadioButton.Content == "Evens" && r % 2 == 0) || ((string)_CurrentRadioButton.Content == "Odds" && r % 2 == 1) || ((string)_CurrentRadioButton.Content == "Blacks" && _Blacks.Contains(r)) || ((string)_CurrentRadioButton.Content == "Reds" && _Reds.Contains(r)) || ((string)_CurrentRadioButton.Content == "1st 12" && r < 13 && r > 0) || ((string)_CurrentRadioButton.Content == "2nd 12" && r < 25 && r > 12) || ((string)_CurrentRadioButton.Content == "3rd 12" && r < 37 && r > 24) || ((string)_CurrentRadioButton.Content == "1-18" && r > 0 && r < 19) || ((string)_CurrentRadioButton.Content == "19-36" && r > 18 && r < 37))
 					{
 						_MoneyLeft += _CurrentBet * multiplier;
+						DisplayText.Text += "\nYou won " + (_CurrentBet * multiplier) + ".";
 					}
 					else
 					{
 						_MoneyLeft -= _CurrentBet;
+						DisplayText.Text += "\nYou lost " + _CurrentBet + ".";
 					}
 					break;
 			}

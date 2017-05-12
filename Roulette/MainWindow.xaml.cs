@@ -41,8 +41,10 @@ namespace Roulette
 
 		private void Spin(object sender, RoutedEventArgs e)
 		{
+			int multiplier;
 			try
 			{
+				multiplier = GetMult();
 				_CurrentBet = int.Parse(Bet.Text);
 				if (_CurrentBet > _MoneyLeft)
 				{
@@ -60,7 +62,6 @@ namespace Roulette
 				DisplayText.Text += "\nChoose your space(s), and place your bet.";
 				return;
 			}
-			int multiplier = GetMult();
 
 			int r = new Random().Next(38);
 			switch (r)

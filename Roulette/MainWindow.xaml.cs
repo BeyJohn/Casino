@@ -70,10 +70,12 @@ namespace Roulette
 					if ((string)_CurrentRadioButton.Content == "0")
 					{
 						_MoneyLeft += _CurrentBet * multiplier;
+						DisplayText.Text += "\nYou won " + (_CurrentBet * multiplier) + ".";
 					}
 					else
 					{
 						_MoneyLeft -= _CurrentBet;
+						DisplayText.Text += "\nYou lost " + _CurrentBet + ".";
 					}
 					break;
 
@@ -82,10 +84,12 @@ namespace Roulette
 					if ((string)_CurrentRadioButton.Content == "00")
 					{
 						_MoneyLeft += _CurrentBet * multiplier;
+						DisplayText.Text += "\nYou won " + (_CurrentBet * multiplier) + ".";
 					}
 					else
 					{
 						_MoneyLeft -= _CurrentBet;
+						DisplayText.Text += "\nYou lost " + _CurrentBet + ".";
 					}
 					break;
 

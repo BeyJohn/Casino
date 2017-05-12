@@ -48,18 +48,18 @@ namespace Roulette
 				_CurrentBet = int.Parse(Bet.Text);
 				if (_CurrentBet > _MoneyLeft)
 				{
-					DisplayText.Text += "\nYour bet cannot be greater than the money you have left!";
+					DisplayText.AppendText("\n\nYour bet cannot be greater than the money you have left!");
 					return;
 				}
 				else if (_CurrentBet == 0)
 				{
-					DisplayText.Text += "\nYour bet cannot be 0!";
+					DisplayText.AppendText("\n\nYour bet cannot be 0!");
 					return;
 				}
 			}
 			catch (Exception E)
 			{
-				DisplayText.Text += "\nChoose your space(s), and place your bet.";
+				DisplayText.AppendText("\n\nChoose your space(s), and place your bet.");
 				return;
 			}
 
@@ -67,48 +67,108 @@ namespace Roulette
 			switch (r)
 			{
 				case 0: // 0
-					DisplayText.Text += "\nSpun a 0.";
+					DisplayText.AppendText("\n\nSpun a 0.");
 					if ((string)_CurrentRadioButton.Content == "0")
 					{
 						_MoneyLeft += _CurrentBet * multiplier;
-						DisplayText.Text += "\nYou won " + (_CurrentBet * multiplier) + ".";
+						DisplayText.AppendText("\n\nYou won " + (_CurrentBet * multiplier) + ".");
 					}
 					else
 					{
 						_MoneyLeft -= _CurrentBet;
-						DisplayText.Text += "\nYou lost " + _CurrentBet + ".";
+						DisplayText.AppendText("\n\nYou lost " + _CurrentBet + ".");
 					}
 					break;
 
 				case 37: // 00
-					DisplayText.Text += "\nSpun a 00.";
+					DisplayText.AppendText("\n\nSpun a 00.");
 					if ((string)_CurrentRadioButton.Content == "00")
 					{
 						_MoneyLeft += _CurrentBet * multiplier;
-						DisplayText.Text += "\nYou won " + (_CurrentBet * multiplier) + ".";
+						DisplayText.AppendText("\n\nYou won " + (_CurrentBet * multiplier) + ".");
 					}
 					else
 					{
 						_MoneyLeft -= _CurrentBet;
-						DisplayText.Text += "\nYou lost " + _CurrentBet + ".";
+						DisplayText.AppendText("\n\nYou lost " + _CurrentBet + ".");
 					}
 					break;
 
 				default:
-					DisplayText.Text += "\nSpun a " + r + ".";
-					if ((string)_CurrentRadioButton.Content == ("" + r) || ((string)_CurrentRadioButton.Content == "Row 1" && _Row1.Contains(r)) || ((string)_CurrentRadioButton.Content == "Row 2" && _Row2.Contains(r)) || ((string)_CurrentRadioButton.Content == "Row 3" && _Row3.Contains(r)) || ((string)_CurrentRadioButton.Content == "Evens" && r % 2 == 0) || ((string)_CurrentRadioButton.Content == "Odds" && r % 2 == 1) || ((string)_CurrentRadioButton.Content == "Blacks" && _Blacks.Contains(r)) || ((string)_CurrentRadioButton.Content == "Reds" && _Reds.Contains(r)) || ((string)_CurrentRadioButton.Content == "1st 12" && r < 13 && r > 0) || ((string)_CurrentRadioButton.Content == "2nd 12" && r < 25 && r > 12) || ((string)_CurrentRadioButton.Content == "3rd 12" && r < 37 && r > 24) || ((string)_CurrentRadioButton.Content == "1-18" && r > 0 && r < 19) || ((string)_CurrentRadioButton.Content == "19-36" && r > 18 && r < 37))
+					DisplayText.AppendText("\n\nSpun a " + r + ".");
+					bool win = false;
+					switch ((string)_CurrentRadioButton.Content)
+					{
+						case "Row 1":
+							win = _Row1.Contains(r);
+							break;
+
+						case "Row 2":
+							win = _Row2.Contains(r);
+							break;
+
+						case "Row 3":
+							win = _Row3.Contains(r);
+							break;
+
+						case "Evens":
+							win = r % 2 == 0;
+							break;
+
+						case "Odds":
+							win = r % 2 == 1;
+							break;
+
+						case "Blacks":
+							win = _Blacks.Contains(r);
+							break;
+
+						case "Reds":
+							win = _Reds.Contains(r);
+							break;
+
+						case "1st 12":
+							win = r < 13 && r > 0;
+							break;
+
+						case "2nd 12":
+							win = r < 25 && r > 12;
+							break;
+
+						case "3rd 12":
+							win = r < 37 && r > 24;
+							break;
+
+						case "1-18":
+							win = r > 0 && r < 19;
+							break;
+
+						case "19-36":
+							win = r > 18 && r < 37;
+							break;
+
+						default:
+							win = (string)_CurrentRadioButton.Content == ("" + r);
+							break;
+					}
+
+					if (win)
 					{
 						_MoneyLeft += _CurrentBet * multiplier;
-						DisplayText.Text += "\nYou won " + (_CurrentBet * multiplier) + ".";
+						DisplayText.AppendText("\n\nYou won " + (_CurrentBet * multiplier) + ".");
 					}
 					else
 					{
 						_MoneyLeft -= _CurrentBet;
-						DisplayText.Text += "\nYou lost " + _CurrentBet + ".";
+						DisplayText.AppendText("\n\nYou lost " + _CurrentBet + ".");
 					}
 					break;
 			}
 			RemainingMoney.Text = _MoneyLeft + "";
+			if (DisplayText.LineCount > 50)
+			{
+
+			}
 		}
 
 		private int GetMult()
@@ -142,7 +202,7 @@ namespace Roulette
 			{
 				_CurrentRadioButton = (RadioButton)sender;
 			}
-			// DisplayText.Text += "\n" + _CurrentRadioButton.Content;
+			// DisplayText.Text += "\n\n" + _CurrentRadioButton.Content;
 		}
 
 		private void DisplayText_TextChanged(object sender, TextChangedEventArgs e)
